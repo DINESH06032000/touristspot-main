@@ -23,7 +23,7 @@ const PointCameraAtIndia = () => {
 
   useEffect(() => {
     const indiaVec = convertCoordsToVector3(78.9629, 20.5937);
-    const distance = 3;
+    const distance = 2.2;
     const cameraPos = indiaVec.clone().normalize().multiplyScalar(distance);
     camera.position.copy(cameraPos);
     camera.lookAt(0, 0, 0);
