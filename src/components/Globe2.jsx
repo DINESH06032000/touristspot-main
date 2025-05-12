@@ -1,8 +1,9 @@
 // A.js
-import React, { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import { Canvas, useThree } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
+import "./css/Globe2.css"
 
 // Convert lat/lon to Vector3 on a sphere
 const convertCoordsToVector3 = (lon, lat, radius = 1.5) => {
@@ -129,7 +130,7 @@ const GeoIndiaLayer = ({ geoJson }) => {
 };
 
 
-const A = () => {
+const Globe2 = () => {
   const [geoJsonData, setGeoJsonData] = useState(null);
   const globeRef = useRef();
 
@@ -143,7 +144,7 @@ const A = () => {
  
 
   return (
-    <Canvas style={{ width: '400px', height: '400px' }} camera={{ position: [0, 0, 5] }}>
+    <Canvas className='india_globe' camera={{ position: [0, 0, 5] }}>
       <ambientLight intensity={0.3} />
       <pointLight position={[10, 10, 10]} intensity={1.2} color="#00faff" />
       <group ref={globeRef}>
@@ -164,4 +165,4 @@ const A = () => {
   );
 };
 
-export default A;
+export default Globe2;

@@ -1,0 +1,13 @@
+.india_globe{
+    margin: 0 auto;
+    width: 400px !important;
+    height: 400px !important;
+}
+@media (max-width:500px) {
+    
+    .india_globe{
+        width: 100% !important;
+        height: 250px !important;
+
+}
+}

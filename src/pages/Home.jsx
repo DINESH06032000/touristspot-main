@@ -1,5 +1,5 @@
 
-import A from "../components/A"
+import Globe2 from "../components/Globe2"
 import "./css/Home.css"
 
 
@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
  
-  <div className='globe_home pt-2'> <A/></div>
+  <div className='globe_home pt-2'> <Globe2/></div>
     </>
   )
 }
