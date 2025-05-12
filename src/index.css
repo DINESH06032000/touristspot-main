@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Underdog", system-ui;
+    font-weight:400;
+    font-style: normal;
+    background-color: var(--eerie-black);
+
+}
+body{
+  color: var(--white);
+
+}
+.row{
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0 !important;
+}
+
+:root{
+  --eerie-black: #1E1F0Fff;
+  --drab-dark-brown: #363D1Bff;
+  --mindaro: #D6FD6Aff;
+  --cal-poly-green: #394B31ff;
+  --white: #FFFFFFff;
+}
+::selection{
+  background-color: var(--mindaro);
+  color: var(--eerie-black);
+}
+

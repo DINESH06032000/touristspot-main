@@ -1,0 +1,8 @@
+@media (max-width:500px) {
+    canvas{
+        height: 240px !important;
+        width: 240px !important;
+        margin: 0 auto !important ;
+
+    }
+}
