@@ -160,7 +160,7 @@ const Globe2 = () => {
 
       {/* Camera controls and auto-rotation */}
       <PointCameraAtIndia />
-      <OrbitControls autoRotate autoRotateSpeed={1.2} enableZoom={false} />
+      <OrbitControls autoRotate autoRotateSpeed={3} enableZoom={false} />
     </Canvas>
   );
 };
