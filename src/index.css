@@ -23,6 +23,7 @@ body{
   --eerie-black: #1E1F0Fff;
   --drab-dark-brown: #363D1Bff;
   --mindaro: #D6FD6Aff;
+  --mindaro-light: rgba(214, 253, 106, 0.192);
   --cal-poly-green: #394B31ff;
   --white: #FFFFFFff;
 }

@@ -23,7 +23,7 @@ const PointCameraAtIndia = () => {
 
   useEffect(() => {
     const indiaVec = convertCoordsToVector3(78.9629, 20.5937);
-    const distance = 2.2;
+    const distance = 2.475;
     const cameraPos = indiaVec.clone().normalize().multiplyScalar(distance);
     camera.position.copy(cameraPos);
     camera.lookAt(0, 0, 0);
@@ -57,7 +57,7 @@ const GeoIndiaLayer = ({ geoJson }) => {
                 new THREE.LineBasicMaterial({
                   color: '#D6FD6A',
                   transparent: true,
-                  opacity: 0.9,
+                  opacity: 1,
                 })
               }
             />

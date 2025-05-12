@@ -1,26 +1,44 @@
-
 /* Globe2.css */
 .india_globe {
-    width: 400px !important;
-    height: 400px !important;
+  width: 400px !important;
+  height: 400px !important;
   display: block;
-  position: fixed; /* or absolute, depending on layout */
+  position: fixed;
+  /* or absolute, depending on layout */
   top: 0;
   left: 0;
   margin: 0;
   padding: 0;
-  box-shadow: 0px 0px 3px var(--mindaro);
-  z-index: 0; /* Adjust if layering with other elements */
+  animation: globe;
+  z-index: 0;
+  box-shadow: 0px 0px 70px var(--mindaro-light);
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* Adjust if layering with other elements */
   border-radius: 50%;
   margin: 0 auto;
 }
 
+@keyframes globe {
+  0% {}
 
-@media (max-width:500px) {
-    
-    .india_globe{
-        width: 230px !important;
-        height: 230px !important;
+  50% {
+    box-shadow: 0px 0px 20px var(--mindaro-light);
+  }
+
+  100% {
+    box-shadow: 0px 0px 70px var(--mindaro-light);
+  }
 
 }
+
+
+@media (max-width:500px) {
+
+  .india_globe {
+    width: 230px !important;
+    height: 230px !important;
+
+  }
 }

@@ -1,0 +1,40 @@
+.globe_indicator {
+    width: fit-content;
+    padding: 10px;
+    line-height: normal;
+    background-color: white;
+    color: black;
+
+}
+
+.globe_rank {
+    text-align: center;
+    color: var(--mindaro);
+padding: 5px ;
+
+}
+
+.globe_text {
+    padding: 5px 10px;
+    background-color: white;
+    
+
+}
+
+.globe_indicator p {
+    margin-bottom: 0px !important;
+}
+
+.globe_indicator div{
+    background-color: var(--mindaro);
+    width: 100px;
+    height: 1px;
+    position: relative;
+    transform: rotate(45deg);
+    top: 45px;
+    left: 200px;
+}
+
+
+
+
