@@ -4,21 +4,33 @@
     line-height: normal;
     background-color: white;
     color: black;
+    position: relative;
+    left: 100px;
+    animation: 4s linear infinite globebtn;
+}
+@keyframes globebtn {
+    0%{
+        top: 0;
 
+    }
+    50%{
+       top: 5px;
+    }
+    100%{
+        top: 0;
+    }
+    
 }
 
 .globe_rank {
     text-align: center;
     color: var(--mindaro);
     padding: 5px;
-
 }
 
 .globe_text {
-    padding: 5px 10px;
+    padding: 0px 10px 5px;
     background-color: white;
-
-
 }
 
 .globe_indicator p {
@@ -26,36 +38,38 @@
 }
 
 .globe_indicator div {
-    background-color: var(--mindaro);
+    position: absolute;
     width: 100px;
     height: 1px;
-    position: relative;
-    transform: rotate(45deg);
-    top: 45px;
-    left: 200px;
+    background-color: var(--mindaro);
+    bottom: 0;
+    right: 0;
+    transform: rotate(45deg) translate(100%, 100%);
+    transform-origin: bottom right;
 }
 
-@media (max-width:992px) {
+@media (max-width: 992px) {
     .globe_indicator {
         padding: 5px;
         margin: 0 auto 20px auto;
         justify-content: center;
+        left: auto;
     }
-.globe_rank {
+
+    .globe_rank {
         padding: 2.5px 5px;
+    }
 
-}
-.globe_text {
+    .globe_text {
         padding: 0px 5px;
+    }
 
+    .globe_indicator div {
+        width: 30px;
+        height: 1px;
+        left: 0;
+        transform: rotate(45deg) translate(0%, 0%);
+        transform-origin: bottom left;
+    }
 }
-.globe_indicator div {
-    background-color: var(--mindaro);
-    width: 50px;
-    height: 1px;
-    position: relative;
-    transform: rotate(45deg);
-    top: 23px;
-left: -12px;
-}
-}
+
